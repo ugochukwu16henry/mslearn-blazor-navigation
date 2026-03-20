@@ -6,9 +6,17 @@ body, html {
 
 body {
     padding-top: 5rem;
+    display: flex;
     flex-direction: column;
     font-family: 'quicksand';
     overflow-y: hidden;
+}
+
+#app {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-height: 0;
 }
 
 form {
@@ -46,7 +54,8 @@ form {
 
 .content {
     display: flex;
-    height: 100%;
+    flex: 1;
+    min-height: 0;
     z-index: 1;
     background-color: white;
 }
